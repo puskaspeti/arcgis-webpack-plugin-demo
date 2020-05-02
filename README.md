@@ -1,31 +1,12 @@
-# TerkepTest
+# ArcGIS webpack-plugin bemutató
 
 Az alkalmazás @eing/schematics segítségével lett generálva.
 
-## Használati útmutató
+A projekt célja, hogy bemutassa a https://developers.arcgis.com/javascript/latest/guide/angular/ linken leírt konfigurációt, kiegészítve a leírásban nem szereplő lépésekkel, hogy működő térkép komponenst lehessen használni típusdefiníciókkal.
 
-## API generálás
+Az [ArcGIS JS konfigurácó commit](https://github.com/puskaspeti/arcgis-webpack-plugin-demo/commit/f45b603afa525325d0bf3e9dc86ec24ab33808ca) tartalmazza a legfontosabb konfigurációs lépéseket.
 
-Az `ng-swagger-gen -c terkep-api.json` legenerálja a(z) `terkep-api.json`-ben leírtak alapján a projekhez szükséges swagger API service-eket és a hozzájuk tartozó komponenseket.
-Mindez a `./src/app/api/terkep` mappa alá generálódik.
-
-Példa:
-
-Az `eing-f-beadvany-frontend-workflow` projekthez tartozó API generáló JSON (api.json) tartalma:
-
-```(json)
-{
-  "$schema": "./node_modules/ng-swagger-gen/ng-swagger-gen-schema.json",
-  "swagger": "http://localhost:7081/eakta/v2/api-docs",
-  "output": "projects/eing-f-beadvany-frontend-workflow/src/api/eakta",
-  "prefix": "eakta-wf",
-  "sortParams": "none"
-}
-```
-
-Fontos, hogy a generált API modul `.forRoot()` beállítása **NE** az `AppModule`-ban legyen, hanem a(z) `TerkepModule`-ban.
-
-### Telepítés
+## Telepítés
 
 Hozzon létre egy `.npmrc` fájlt a home könyvtárban (Linux/Windows PowerShell: `cd ~`, Windows parancssor: `cd %HOMEPATH%`).
 Ha már létezik ilyen fájl, a meglévőt nyissa meg és fűzze a tartalma utána a lentebb található szöveget.
