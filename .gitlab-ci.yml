@@ -1,0 +1,8 @@
+include:
+  - project: 'e-ing/infrastructure/eing-common-ci-config'
+    ref: master
+    file: 'frontend/frontend-app.gitlab-ci-template.yml'
+
+variables:
+  APP_NAME: terkep-test
+  SUBDOMAIN: terkep

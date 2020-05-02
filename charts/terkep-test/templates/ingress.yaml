@@ -1,0 +1,6 @@
+{{- if .Values.ingress.enabled -}}
+  {{- template "common-frontend.ingress" (list . "terkep-test.ingress") -}}
+{{- end -}}
+{{- define "terkep-test.ingress" -}}
+## Define overrides for your Ingress resource here
+{{- end -}}

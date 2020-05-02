@@ -1,0 +1,6 @@
+{{- template "common-frontend.deployment" (list . "terkep-test.deployment") -}}
+{{- define "terkep-test.deployment" -}}
+## Define overrides for your Deployment resource here
+spec:
+  replicas: {{ .Values.replicaCount }}
+{{- end -}}

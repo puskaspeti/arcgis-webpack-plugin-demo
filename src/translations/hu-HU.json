@@ -1,0 +1,8 @@
+{
+  "$schema": "./translation.schema.json",
+  "TERKEP_TEST": {
+    "HOME": {
+      "TITLE": "Kezdőoldal"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{{- if .Values.persistence -}}
+    {{- template "common-frontend.persistentvolumeclaim" (list . "terkep-test.persistentvolumeclaim") -}}
+{{- end -}}
+{{- define "terkep-test.persistentvolumeclaim" -}}
+{{- end -}}

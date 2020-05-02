@@ -1,0 +1,4 @@
+{{- template "common-frontend.configmap" (list . "terkep-test.configmap") -}}
+{{- define "terkep-test.configmap" -}}
+## Define overrides for your Configmap resource here
+{{- end -}}

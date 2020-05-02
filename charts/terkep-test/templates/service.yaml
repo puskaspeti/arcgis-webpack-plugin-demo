@@ -1,0 +1,4 @@
+{{- template "common-frontend.service" (list . "terkep-test.service") -}}
+{{- define "terkep-test.service" -}}
+## Define overrides for your Service resource here
+{{- end -}}

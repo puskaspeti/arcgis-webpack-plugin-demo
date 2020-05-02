@@ -1,0 +1,19 @@
+{
+  "definitions": {
+    "translation": {
+      "type": ["string", "object"],
+      "additionalProperties": { "$ref": "#/definitions/translation" }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nextval.hu/translation.schema.json",
+  "type": "object",
+  "title": "The schema for translation.*.json files.",
+  "required": ["$schema", "TERKEP_TEST"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "COMMON":  { "$ref": "#/definitions/translation"},
+    "TERKEP_TEST": { "$ref": "#/definitions/translation" }
+  },
+  "additionalProperties": false
+}
