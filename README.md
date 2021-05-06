@@ -22,3 +22,7 @@ registry=https://registry.npmjs.org/
 Az `<auth data>`-t cserélje a megfelelő authentikációs adatra.
 
 Ezután már rendelkeznie kell hozzáféréssel a E-ING Nexus-hoz. Minden `@eing/...` és `@eing-types/` csomag itt kerül tárolásra.
+
+Valamilyen módosítás.
+
+Még több módosítás
